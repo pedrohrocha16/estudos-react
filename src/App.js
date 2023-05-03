@@ -7,6 +7,7 @@ import ComponentEstilos from './components/ComponentEstilos';
 import ComponentFragments from './components/ComponentFragments';
 import ComponentList from './components/ComponentList';
 import ComponentImg from './components/ComponentImg';
+import ComponentsEvents from './components/ComponentsEvents';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
       <ComponentFragments />
       <ComponentList />
       <ComponentImg />
+      <ComponentsEvents />
+
     </div>
   );
 }
