@@ -5,7 +5,7 @@ import ComponentProps from './components/ComponentProps';
 import ComponentPropsStruct from './components/ComponentPropsStruct';
 import ComponentEstilos from './components/ComponentEstilos';
 import ComponentFragments from './components/ComponentFragments';
-
+import ComponentList from './components/ComponentList';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
       <ComponentPropsStruct tec='ReactJS'/>
       <ComponentEstilos />
       <ComponentFragments />
+      <ComponentList />
     </div>
   );
 }
