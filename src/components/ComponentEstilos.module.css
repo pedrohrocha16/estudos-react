@@ -1,0 +1,16 @@
+h3 {
+    color: brown;
+    margin-top: 5rem;
+}
+.exemplo01{
+    color: rgb(11, 136, 136);
+}
+.exemplo02{
+    color: coral;
+    font-size: 18px;
+    font-style: italic;
+}
+.exemplo03:hover{
+    color: cornflowerblue;
+    font-style: inherit;
+}
