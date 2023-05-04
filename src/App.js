@@ -8,6 +8,8 @@ import ComponentFragments from './components/ComponentFragments';
 import ComponentList from './components/ComponentList';
 import ComponentImg from './components/ComponentImg';
 import ComponentsEvents from './components/ComponentsEvents';
+import EventForm from './components/EventForm';
+
 
 function App() {
   return (
@@ -22,7 +24,7 @@ function App() {
       <ComponentList />
       <ComponentImg />
       <ComponentsEvents />
-
+      <EventForm />
     </div>
   );
 }
