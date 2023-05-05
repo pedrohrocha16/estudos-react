@@ -1,7 +1,8 @@
 .titleImg {
     color: rgb(67, 16, 253);
 }
-img {
+.imgPrincipal {
     border: 2px solid black;
     border-radius: 10px;
+    width: 350px;
 }

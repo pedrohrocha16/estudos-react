@@ -9,6 +9,9 @@ import ComponentList from './components/ComponentList';
 import ComponentImg from './components/ComponentImg';
 import ComponentsEvents from './components/ComponentsEvents';
 import EventForm from './components/EventForm';
+import EventoButton from './components/EventoButton';
+import PegandoDados from './components/PegandoDados';
+
 
 
 function App() {
@@ -25,6 +28,8 @@ function App() {
       <ComponentImg />
       <ComponentsEvents />
       <EventForm />
+      <EventoButton />
+      <PegandoDados />
     </div>
   );
 }
