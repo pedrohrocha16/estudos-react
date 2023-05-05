@@ -11,6 +11,7 @@ import ComponentsEvents from './components/ComponentsEvents';
 import EventForm from './components/EventForm';
 import EventoButton from './components/EventoButton';
 import PegandoDados from './components/PegandoDados';
+import RenderizacaoCondicional from './components/RenderizacaoCondicional';
 
 
 
@@ -30,6 +31,7 @@ function App() {
       <EventForm />
       <EventoButton />
       <PegandoDados />
+      <RenderizacaoCondicional />
     </div>
   );
 }
