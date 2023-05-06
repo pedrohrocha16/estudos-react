@@ -3,8 +3,8 @@ function RenderizandoLista({itens}) {
       <div>
          <h3>Lista de coisas boas:</h3>
         {itens.length > 0 ? (
-        itens.map ((item) => (
-         <p>{item}</p>
+        itens.map ((item, index) => (
+         <p key={index}>{item}</p>
          ))) : (
             <p>Essa lista não possui itens!</p>
          )
