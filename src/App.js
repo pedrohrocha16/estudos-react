@@ -12,10 +12,15 @@ import EventForm from './components/EventForm';
 import EventoButton from './components/EventoButton';
 import PegandoDados from './components/PegandoDados';
 import RenderizacaoCondicional from './components/RenderizacaoCondicional';
+import RenderizandoLista from './components/RenderizandoLista';
+
 
 
 
 function App() {
+
+const listaUm = ['violão', 'rede', 'descansar']
+const listaDois =['código', 'estudos', 'react']
   return (
     <div className="App"> 
       <MeuPrimeiroComponent />
@@ -32,6 +37,9 @@ function App() {
       <EventoButton />
       <PegandoDados />
       <RenderizacaoCondicional />
+      <RenderizandoLista itens={listaUm}/>
+      <RenderizandoLista itens={[]}/>
+      <RenderizandoLista itens={listaDois}/>
     </div>
   );
 }

@@ -14,7 +14,6 @@ function RenderizacaoCondicional(){
         setSenhaVal('')
     }
 
-
     return(
         <div>
             <h3>Revelar senha digitada:</h3>
