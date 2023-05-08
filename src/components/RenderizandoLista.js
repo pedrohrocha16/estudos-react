@@ -1,15 +1,15 @@
-function RenderizandoLista({itens}) {
-   return (
-      <div>
+function RenderizandoLista({itens}){
+   return(
+      <>
          <h3>Lista de coisas boas:</h3>
-        {itens.length > 0 ? (
-        itens.map ((item, index) => (
-         <p key={index}>{item}</p>
+         {itens.length > 0 ? (
+         itens.map((item, index) => (
+            <p key={index}>{item}</p>
          ))) : (
-            <p>Essa lista não possui itens!</p>
+            <p>Não há itens na lista!</p>
          )
-      }
-      </div>
+         }
+      </>
    )
 }
 

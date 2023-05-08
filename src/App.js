@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import MeuPrimeiroComponent from './components/MeuPrimeiroComponent';
 import ComponentReaproveitavel from './components/ComponentReaproveitavel';
@@ -13,7 +14,8 @@ import EventoButton from './components/EventoButton';
 import PegandoDados from './components/PegandoDados';
 import RenderizacaoCondicional from './components/RenderizacaoCondicional';
 import RenderizandoLista from './components/RenderizandoLista';
-
+import StateLift from './components/StateLift';
+import Saudacao from './components/Saudacao';
 
 
 
@@ -21,6 +23,9 @@ function App() {
 
 const listaUm = ['violão', 'rede', 'descansar']
 const listaDois =['código', 'estudos', 'react']
+const [nome, setNomeUser] = useState()
+
+
   return (
     <div className="App"> 
       <MeuPrimeiroComponent />
@@ -40,6 +45,8 @@ const listaDois =['código', 'estudos', 'react']
       <RenderizandoLista itens={listaUm}/>
       <RenderizandoLista itens={[]}/>
       <RenderizandoLista itens={listaDois}/>
+      <StateLift setNome={setNomeUser}/>
+      <Saudacao nome={nome}/>
     </div>
   );
 }
