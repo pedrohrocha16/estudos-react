@@ -1,53 +1,24 @@
-import { useState } from 'react';
-import './App.css';
-import MeuPrimeiroComponent from './components/MeuPrimeiroComponent';
-import ComponentReaproveitavel from './components/ComponentReaproveitavel';
-import ComponentProps from './components/ComponentProps';
-import ComponentPropsStruct from './components/ComponentPropsStruct';
-import ComponentEstilos from './components/ComponentEstilos';
-import ComponentFragments from './components/ComponentFragments';
-import ComponentList from './components/ComponentList';
-import ComponentImg from './components/ComponentImg';
-import ComponentsEvents from './components/ComponentsEvents';
-import EventForm from './components/EventForm';
-import EventoButton from './components/EventoButton';
-import PegandoDados from './components/PegandoDados';
-import RenderizacaoCondicional from './components/RenderizacaoCondicional';
-import RenderizandoLista from './components/RenderizandoLista';
-import StateLift from './components/StateLift';
-import Saudacao from './components/Saudacao';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import NavBar from './components/layout/NavBar';
 
+import Home from './components/pages/Home';
+import Historia from './components/pages/Historia';
+import Contato from './components/pages/Contato';
+import TrabalheConosco from './components/pages/TrabalheConosco';
 
 
 function App() {
-
-const listaUm = ['violão', 'rede', 'descansar']
-const listaDois =['código', 'estudos', 'react']
-const [nome, setNomeUser] = useState()
-
-
   return (
-    <div className="App"> 
-      <MeuPrimeiroComponent />
-      <ComponentReaproveitavel />
-      <ComponentReaproveitavel />
-      <ComponentProps valor='Você é incrível, não desista dos seus sonhos!'/>
-      <ComponentPropsStruct tec='ReactJS'/>
-      <ComponentEstilos />
-      <ComponentFragments />
-      <ComponentList />
-      <ComponentImg />
-      <ComponentsEvents />
-      <EventForm />
-      <EventoButton />
-      <PegandoDados />
-      <RenderizacaoCondicional />
-      <RenderizandoLista itens={listaUm}/>
-      <RenderizandoLista itens={[]}/>
-      <RenderizandoLista itens={listaDois}/>
-      <StateLift setNome={setNomeUser}/>
-      <Saudacao nome={nome}/>
-    </div>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/historia' element={<Historia />} />
+        <Route path='/contato' element={<Contato />} />
+        <Route path='/trabalheConosco' element={<TrabalheConosco />} />
+      </Routes>
+
+    </Router>
   );
 }
 
