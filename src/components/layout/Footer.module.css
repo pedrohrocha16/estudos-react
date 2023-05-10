@@ -1,0 +1,11 @@
+.footer {
+   background: rgb(86, 128, 125);
+   color: whitesmoke;
+   display: flex;
+   font-size: 22px;
+   justify-content: center;
+}
+.footer svg {
+   margin-left: 1rem;
+   margin-right: 1rem;
+}

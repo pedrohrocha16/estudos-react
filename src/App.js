@@ -5,7 +5,7 @@ import Home from './components/pages/Home';
 import Historia from './components/pages/Historia';
 import Contato from './components/pages/Contato';
 import TrabalheConosco from './components/pages/TrabalheConosco';
-
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Route path='/contato' element={<Contato />} />
         <Route path='/trabalheConosco' element={<TrabalheConosco />} />
       </Routes>
+        <Footer />
 
     </Router>
   );
